@@ -2,9 +2,9 @@ var fs = require ('fs')
 var path = require ('path')
 
 
-fs.readdir(process.argv[2], function filterList (err, list) {
+fs.readdir(process.argv[2], function (err, list){
   var ext = "." + process.argv[3]
-  list.forEach(function (file){
+  list.forEach(function(file){
     if (path.extname(file) === ext){
       console.log(file)
     }
