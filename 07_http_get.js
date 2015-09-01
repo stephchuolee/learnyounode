@@ -1,22 +1,24 @@
 var http = require('http');
 
 
-// http.get(process.argv[2], function(response){
-//   response.on("data", callback(data))
-//     // console.log(data.toString())
-// })
-
-// function callback(data){
-//   console.log(data.toString)
-// }
 
 http.get(process.argv[2], function(response){
-  response.on("data", function(data){
-    console.log(data.toString())
-  })
+  response.on("data", callback)
+    // console.log(data.toString())
 })
 
-// official solution
+function callback(data){
+  console.log(data.toString())
+}
+
+
+// http.get(process.argv[2], function(response){
+//   response.on("data", function(data){
+//     console.log(data.toString())
+//   })
+// })
+
+// // official solution
 
 // var http = require('http')
 

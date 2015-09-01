@@ -14,11 +14,13 @@ fs.readFile(process.argv[2], 'utf8', function (err, fileContents){
 // function findLines(callback){
 //   fs.readFile(process.argv[2], 'utf8', function doneReading(err, fileContents){
 //     lines = fileContents.split('\n').length -1 
-//     callback()
+//     callback(lines)
 //   })
 // }
 
 
-// function logLines() {
-//   console.log(findLines)
+// function logLines(data) {
+//   console.log(data)
 // }
+
+// findLinds(logLines)
